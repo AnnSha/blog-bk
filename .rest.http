@@ -1,0 +1,85 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "react",
+  "author": "lol",
+  "url": "https://fullstackopen.com/",
+  "likes": 4
+}
+
+###
+DELETE http://localhost:3003/api/blogs/6273f06ee9e401562ccd6c98
+Accept: application/json
+###
+PUT http://localhost:3003/api/blogs/645f56c824ed2278600cba83
+Content-Type: application/json
+
+{
+  "title": "react",
+  "author": "lol",
+  "url": "https://fullstackopen.com/",
+  "likes": 10
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "root",
+  "name": "Superuser",
+  "password": "salainen"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+  "username": "ansha",
+  "name": "Anna Sha",
+  "password": "aaaaaaaa"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "js",
+  "author": "Anna",
+  "url": "https://fullstackopen.com/",
+  "likes": 5,
+  "userId": "645f89449b7cd8ee39fd2527"
+}
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+"username": "ansh",
+"password": "aaaaaaaa"
+}
+
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "salainen"
+}
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjY0NWY4OTMxOWI3Y2Q4ZWUzOWZkMjUyMiIsImlhdCI6MTY4NDA3NjE1NH0.zKQ1CifdghPkn26AQltc_z4NIX-ewMYUJ_dZ9utQbWw
+
+{
+  "title": "webstorm",
+  "author": "Mike",
+  "url": "https://fullstackopen.com/",
+  "likes": 5,
+  "userId": "645f89319b7cd8ee39fd2522"
+}
