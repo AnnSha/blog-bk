@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "lint": "eslint .",
     "test": "jest --verbose",
-    "start:test": "cross-env NODE_ENV=test node --inspect-brk index.js"
+    "start:test": "NODE_ENV=test node index.js"
   },
   "keywords": [],
   "author": "",
