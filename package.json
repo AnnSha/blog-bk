@@ -19,6 +19,7 @@
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^5.4.0",
     "mongoose": "^7.0.5",
@@ -33,6 +34,5 @@
   "jest": {
     "testEnvironment": "node",
     "globalTeardown": "./tests/teardown.js"
-  },
-  "proxy": "http://localhost:3003"
+  }
 }
